@@ -1,34 +1,65 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-.one {
-  color: paleturquoise;
-  text-align: center;
+html{
+  font-size: 10px;
+  font-family: "roboto",sans-serif;
+}
+section{
+  padding: 6rem 0;
+  background-color: #fff;
 }
 
-.two {
-  text-align: center;
-  color: lightcoral;
-  margin-top: 20px;
+.card-wrapper{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.card{
+  width: 30rem;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0, 0.2); 
+  
+}
+.card .card-img{
+width: 100%;
+height: 20rem;
+object-fit: cover;
+}
+.card .box{
+
+ background-color: white;
+}
+.card h1{
+  font-size: 2.5rem;
+  color: #333;
+  margin: 1.5rem 0;
+}
+.card p{
+  font-size: 1.5rem;
+  color: #333;
+  margin: 1.5rem 0;
 }
 
-button {
-  padding: 30px 30px 30px 30px;
-  margin-left: 600px;
-  margin-top: 50px;
-  border-radius: 30px;
-  width: 20%;
-  background-color: lightgreen;
-}
+@media( min-width:700px){
+  
+  .card-wrapper{
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
 
-.three {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.three p {
-  color: peru;
-  margin-top: 10px;
+  .card{
+      margin: 2rem;
+      transition: transform 0.5s;
+  }
 }
