@@ -4,6 +4,44 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: green;
+}
+
+.common {
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  padding: 70px 70px 70px 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 60px;
+  height: 70%;
+}
+
+.one h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.one p {
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  color: black;
+  background-color: pink;
+  margin-left: 350px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 10px;
+  width: 40%;
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -117,5 +155,4 @@ footer-menu-two {
 }
 .footer-bottom p a :hover {
   color: #272727;
-
 }
